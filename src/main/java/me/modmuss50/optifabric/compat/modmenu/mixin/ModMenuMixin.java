@@ -1,7 +1,7 @@
 package me.modmuss50.optifabric.compat.modmenu.mixin;
 
 import com.google.common.collect.ImmutableMap;
-import io.github.prospector.modmenu.ModMenu;
+import com.terraformersmc.modmenu.ModMenu;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screen.ScreenBase;

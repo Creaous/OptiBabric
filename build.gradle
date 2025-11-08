@@ -41,7 +41,7 @@ repositories {
 	}
 	// Used for a StationAPI dependency.
 	maven {
-		name = 'Froge'
+		name = 'Forge'
 		url 'https://maven.minecraftforge.net/'
 	}
 	// Used for projects that do not have a maven repository, but do have a GitHub repository with working build scripts.
@@ -49,6 +49,11 @@ repositories {
 		name = 'Jitpack'
 		url = 'https://jitpack.io'
 	}
+    // Required for ModMenu
+    maven {
+        name = "Terraformers"
+        url = "https://maven.terraformersmc.com/"
+    }
 	// Used for another StationAPI dependency
 	exclusiveContent {
 		forRepository {
@@ -76,7 +81,7 @@ dependencies {
 	modImplementation "net.modificationstation:StationAPI:${project.stapi_version}"
 
 	// Optional, but convenient mods for mod creators and users alike.
-	modImplementation("com.github.calmilamsy:ModMenu:${project.modmenu_version}") {
+	modImplementation("com.terraformersmc:modmenu:${project.modmenu_version}") {
 		transitive false
 	}
 //	modImplementation("net.glasslauncher.mods:GlassConfigAPI:${project.gcapi_version}") {
